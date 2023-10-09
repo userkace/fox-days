@@ -3,12 +3,12 @@
 
 :root{
   --black: #05060f99;
-  --background: linear-gradient(180deg, rgba(190,167,125,1) 0%, rgba(224,212,185,1) 50%, rgba(211,198,169,1) 100%);
-  --border: #772602;
-  --button: linear-gradient(180deg, rgba(173,99,1,1) 0%, rgba(255,255,68,1) 20%, rgba(255,255,219,1) 0%, rgba(242,219,42,1) 80%, rgba(115,50,0,1) 100%);
-  background: var(--background);
+  --tan: linear-gradient(180deg, rgba(190,167,125,1) 0%, rgba(224,212,185,1) 50%, rgba(211,198,169,1) 100%);
+  --dark-brown: #772602;
+  background: var(--tan);
   background-size: cover;
   height: 100%;
+  cursor: url('./assets/pointer.png');
 }
 
 main{
@@ -34,11 +34,11 @@ main{
   display: flex;
   margin-bottom: 1em;
   outline: none;
-  color: var(--border);
+  color: var(--dark-brown);
   padding: 0.5em;
-  border: 2px dashed var(--border);
+  border: 2px dashed var(--dark-brown);
   border-radius: 15px;
-  background-color: var(--background);
+  background-color: var(--tan);
   box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
   transition: .1s ease-in-out, .4s color;
 }
@@ -54,7 +54,7 @@ main{
 }
 #btn:hover,
   .btn:hover{
-    border: 2px solid var(--border);
+    border: 2px solid var(--dark-brown);
 }
 #btn:hover,
 .btn:active {
@@ -85,11 +85,11 @@ main{
     align-items: center;
     margin-bottom: 1em;
     outline: none;
-    color: var(--border);
+    color: var(--dark-brown);
     padding: 1em 0em;
-    border: 2px dashed var(--border);
+    border: 2px dashed var(--dark-brown);
     border-radius: 15px;
-    background-color: var(--background);
+    background-color: var(--tan);
     box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
     transition: .1s ease-in-out, .4s color;
 }
@@ -121,7 +121,7 @@ main{
 .input:hover, .input:focus, .input-group:hover .input {
   outline: none;
   border-style: dashed;
-  border-color: var(--border);
+  border-color: var(--dark-brown);
 }
 .input:focus {
   border-style: solid;
