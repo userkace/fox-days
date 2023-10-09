@@ -26,6 +26,7 @@
                 <button id="btn" onclick="toggleDisplay('dance', 'Dancing')">Dancing</button>
                 <button id="btn" onclick="toggleDisplay('botb', 'Battle of The Bands')">Battle of The Bands</button>
                 <button id="btn" onclick="toggleDisplay('mrms', 'Mr. and Ms. SOC')">Mr. and Ms. SOC</button>
+                <button id="btn" onclick="toggleDisplay('test', 'Test')">Test</button>
             </div>
 
             
@@ -203,7 +204,42 @@
                     </form>
                 </div>
             </div>
+
+
+            
+        <div id="test" class="tab">
+            <div class="header">
+                <button class="btn" onclick="toggleDisplay('test')"><ion-icon name="chevron-back"></ion-icon></button>
+                <h1 id="event-name">Test</h1>
+            </div>   
+            <div class="sheet">
+                
+                <form id="input" action="https://docs.google.com/forms/d/e/1FAIpQLSdqL1AFVuwj40bCKiPqybPAGqooDWXLxhEJB2RLI0sLZXVNiw/formResponse">
+                    <div class="input-group">
+                        <label class="label">Name</label>
+                        <input autocomplete="off" id="Name" class="input" type="text" name="entry.660327431" required data-form-input>
+                        <div></div></div>
+                    <div class="input-group">
+                        <label class="label">Email Address</label>
+                        <input autocomplete="off" id="Email" class="input" type="email" name="entry.87362158" required data-form-input>
+                        <div></div></div>
+                    <div class="input-group">
+                        <label class="label">Contestant</label>
+                        <select id="Contestant" class="input dropdown" name="entry.1195037347" required data-form-input>
+                            <option></option>
+                            <option>Contestant 1</option>
+                            <option>Contestant 2</option>
+                            <option>Contestant 3</option>
+                        </select>
+                        <div></div></div>
+                    <button id="btn" type="submit" onclick="toggleDisplay('test')">Submit</button>
+                </form>
+            </div>
+        </div>
+
+
         </main>
+
 
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
