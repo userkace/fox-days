@@ -68,7 +68,7 @@ main{
     display: none;
 }
 .header{
-  width: 30em;
+  width: 25em;
 }
 #event-name{
   font-family: "Belgan";
@@ -78,7 +78,7 @@ main{
   color: var(--black);
 }
 .sheet{
-    width:30em;
+    width: 25em;
     display: flex;
     justify-content: center;
     align-items: center;
