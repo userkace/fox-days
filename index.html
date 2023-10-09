@@ -32,7 +32,7 @@
             
             <div id="poster" class="tab">
                 <div class="header">
-                    <button class="btn" onclick="toggleDisplay('poster')"><ion-icon name="chevron-back"></ion-icon></button>
+                    <button class="btn" onclick="toggleDisplay('poster')"><ion-icon name="caret-back"></ion-icon></button>
                     <h1 id="event-name">Poster Making</h1>
                 </div>   
                 <div class="sheet">
@@ -61,7 +61,7 @@
 
             <div id="mv" class="tab">
                 <div class="header">
-                    <button class="btn" onclick="toggleDisplay('mv')"><ion-icon name="chevron-back"></ion-icon></button>
+                    <button class="btn" onclick="toggleDisplay('mv')"><ion-icon name="caret-back"></ion-icon></button>
                     <h1 id="event-name">Music Video</h1>
                 </div>   
                 <div class="sheet">
@@ -88,7 +88,7 @@
             
             <div id="ad" class="tab">
                 <div class="header">
-                    <button class="btn" onclick="toggleDisplay('ad')"><ion-icon name="chevron-back"></ion-icon></button>
+                    <button class="btn" onclick="toggleDisplay('ad')"><ion-icon name="caret-back"></ion-icon></button>
                     <h1 id="event-name">Video Advertisement</h1>
                 </div>
                 <div class="sheet">
@@ -108,7 +108,7 @@
 
             <div id="sing" class="tab">
                 <div class="header">
-                    <button class="btn" onclick="toggleDisplay('sing')"><ion-icon name="chevron-back"></ion-icon></button>
+                    <button class="btn" onclick="toggleDisplay('sing')"><ion-icon name="caret-back"></ion-icon></button>
                     <h1 id="event-name">Singing</h1>
                 </div>
                 <div class="sheet">
@@ -128,7 +128,7 @@
 
             <div id="cosplay" class="tab">
                 <div class="header">
-                    <button class="btn" onclick="toggleDisplay('cosplay')"><ion-icon name="chevron-back"></ion-icon></button>
+                    <button class="btn" onclick="toggleDisplay('cosplay')"><ion-icon name="caret-back"></ion-icon></button>
                     <h1 id="event-name">Cosplay</h1>
                 </div>
                 <div class="sheet">
@@ -148,7 +148,7 @@
 
             <div id="dance" class="tab">
                 <div class="header">
-                    <button class="btn" onclick="toggleDisplay('dance')"><ion-icon name="chevron-back"></ion-icon></button>
+                    <button class="btn" onclick="toggleDisplay('dance')"><ion-icon name="caret-back"></ion-icon></button>
                     <h1 id="event-name">Dancing</h1>
                 </div>
                 <div class="sheet">
@@ -168,7 +168,7 @@
 
             <div id="botb" class="tab">
                 <div class="header">
-                    <button class="btn" onclick="toggleDisplay('botb')"><ion-icon name="chevron-back"></ion-icon></button>
+                    <button class="btn" onclick="toggleDisplay('botb')"><ion-icon name="caret-back"></ion-icon></button>
                     <h1 id="event-name">Battle of the Bands</h1>
                 </div>
                 <div class="sheet">
@@ -188,7 +188,7 @@
 
             <div id="mrms" class="tab">
                 <div class="header">
-                    <button class="btn" onclick="toggleDisplay('mrms')"><ion-icon name="chevron-back"></ion-icon></button>
+                    <button class="btn" onclick="toggleDisplay('mrms')"><ion-icon name="caret-back"></ion-icon></button>
                     <h1 id="event-name">Mr. and Ms. SOC</h1>
                 </div>
                 <div class="sheet">
@@ -209,7 +209,7 @@
             
         <div id="test" class="tab">
             <div class="header">
-                <button class="btn" onclick="toggleDisplay('test')"><ion-icon name="chevron-back"></ion-icon></button>
+                <button class="btn" onclick="toggleDisplay('test')"><ion-icon name="caret-back"></ion-icon></button>
                 <h1 id="event-name">Test</h1>
             </div>   
             <div class="sheet">
@@ -218,12 +218,8 @@
                     <div class="input-group">
                         <label class="label">Name</label>
                         <input autocomplete="off" id="Name" class="input" type="text" name="entry.660327431" required data-form-input>
-                        <div></div></div>
-                    <div class="input-group">
                         <label class="label">Email Address</label>
                         <input autocomplete="off" id="Email" class="input" type="email" name="entry.87362158" required data-form-input>
-                        <div></div></div>
-                    <div class="input-group">
                         <label class="label">Contestant</label>
                         <select id="Contestant" class="input dropdown" name="entry.1195037347" required data-form-input>
                             <option></option>
@@ -232,7 +228,10 @@
                             <option>Contestant 3</option>
                         </select>
                         <div></div></div>
-                    <button id="btn" type="submit" onclick="toggleDisplay('test')">Submit</button>
+
+                    <button class="submit" type="submit" onclick="toggleDisplay('test')"><ion-icon name="arrow-redo"></ion-icon></button>
+
+
                 </form>
             </div>
         </div>
