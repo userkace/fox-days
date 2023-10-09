@@ -1,10 +1,8 @@
-@font-face {
-  font-family: "Zagora";
-  src: url(./assets/Zagora.ttf) format("truetype");
-}
-
+@font-face { font-family: "Zagora"; src: url(./assets/Zagora.ttf) format("truetype"); }
+@font-face { font-family: "Belgan"; src: url(./assets/Belgan-Aesthetic.ttf) format("truetype"); }
 
 :root{
+  --black: #05060f99;
   --background: linear-gradient(180deg, rgba(190,167,125,1) 0%, rgba(224,212,185,1) 50%, rgba(211,198,169,1) 100%);
   --border: #772602;
   --button: linear-gradient(180deg, rgba(173,99,1,1) 0%, rgba(255,255,68,1) 20%, rgba(255,255,219,1) 0%, rgba(242,219,42,1) 80%, rgba(115,50,0,1) 100%);
@@ -69,6 +67,16 @@ main{
 .tab{
     display: none;
 }
+.header{
+  width: 30em;
+}
+#event-name{
+  font-family: "Belgan";
+  margin: 0;
+  padding: 0;
+  float: right;
+  color: var(--black);
+}
 .sheet{
     width:30em;
     display: flex;
@@ -77,9 +85,7 @@ main{
     margin-bottom: 1em;
     outline: none;
     color: var(--border);
-    padding: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 1em 0em;
     border: 2px dashed var(--border);
     border-radius: 15px;
     background-color: var(--background);
