@@ -1,6 +1,6 @@
+/*Reusable*/
 @font-face { font-family: "Zagora"; src: url(./Zagora.ttf) format("truetype"); }
 @font-face { font-family: "Belgan"; src: url(./Belgan-Aesthetic.ttf) format("truetype"); }
-
 :root{
   --black: #05060f99;
   --tan: linear-gradient(180deg, rgba(190,167,125,1) 0%, rgba(224,212,185,1) 50%, rgba(211,198,169,1) 100%);
@@ -17,6 +17,8 @@
   cursor: var(--default);
 }
 
+
+/*Main*/
 main{
   cursor: var(--default);
   display: flex;
@@ -24,8 +26,6 @@ main{
   align-items: center;
   flex-direction: column;
 }
-
-
 body{
   cursor: var(--default);
 
@@ -35,6 +35,7 @@ body{
   display: flex;
   width: 30em;
 }
+
 
 /*Buttons*/
 #btns{
@@ -46,7 +47,6 @@ body{
   font-size: .9rem;
   font-family: "Zagora";
   display: flex;
-  margin-bottom: 1em;
   outline: none;
   color: var(--dark-brown);
   padding: 0.5em;
@@ -58,6 +58,7 @@ body{
 }
 #btn{
   padding-left: 3em;
+  margin-bottom: 1em;
   padding-right: 3em;
 }
 .btn {
@@ -75,6 +76,7 @@ body{
     transform: translateX(0.1em) translateY(0.1em);
     box-shadow: 0 0 0 4px #EADDCA, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5);
 }
+
 
 
 /*Grading*/

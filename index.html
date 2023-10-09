@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Kervin Padilla">
@@ -8,10 +9,14 @@
         <link rel="shortcut icon" href="./assets/logo.ico" type="image/x-icon">
         <script type="text/javascript" src="./assets/script.js"></script>
         <link rel="stylesheet" href="./assets/style.css">
+
     </head>
     <body>
         <main>
+
             <img id="head-logo" src="./assets/socdays.png">
+
+
             <div id="btns">
                 <button id="btn" onclick="toggleDisplay('poster', 'Poster Making')">Poster Making</button>
                 <button id="btn" onclick="toggleDisplay('mv', 'Music Video')">Music Video</button>
@@ -22,13 +27,15 @@
                 <button id="btn" onclick="toggleDisplay('botb', 'Battle of The Bands')">Battle of The Bands</button>
                 <button id="btn" onclick="toggleDisplay('mrms', 'Mr. and Ms. SOC')">Mr. and Ms. SOC</button>
             </div>
+
+            
             <div id="poster" class="tab">
                 <div class="header">
-                    <button class="btn" onclick="toggleDisplay('poster')">Back</button>
+                    <button class="btn" onclick="toggleDisplay('poster')"><ion-icon name="chevron-back"></ion-icon></button>
                     <h1 id="event-name">Poster Making</h1>
                 </div>   
                 <div class="sheet">
-                    <div id="input">
+                    <form id="input">
                         <div class="input-group">
                             <label class="label">Name</label>
                             <input autocomplete="off" name="Name" id="Name" class="input" type="text">
@@ -46,16 +53,18 @@
                                 <option>Contestant 3</option>
                             </select>
                             <div></div></div>
-                    </div>
+                    </form>
                 </div>
             </div>
+
+
             <div id="mv" class="tab">
                 <div class="header">
-                    <button class="btn" onclick="toggleDisplay('mv')">Back</button>
+                    <button class="btn" onclick="toggleDisplay('mv')"><ion-icon name="chevron-back"></ion-icon></button>
                     <h1 id="event-name">Music Video</h1>
                 </div>   
                 <div class="sheet">
-                    <div id="input">
+                    <form id="input">
                         <div class="input-group">
                             <label class="label">Name</label>
                             <input autocomplete="off" name="Name" id="Name" class="input" type="text">
@@ -71,16 +80,18 @@
                                     <option>Contestant 1</option>
                                 </select>
                                 <div></div></div>
-                    </div>
+                    </form>
                 </div>
             </div>
+
+            
             <div id="ad" class="tab">
                 <div class="header">
-                    <button class="btn" onclick="toggleDisplay('ad')">Back</button>
+                    <button class="btn" onclick="toggleDisplay('ad')"><ion-icon name="chevron-back"></ion-icon></button>
                     <h1 id="event-name">Video Advertisement</h1>
                 </div>
                 <div class="sheet">
-                    <div id="input">
+                    <form id="input">
                         <div class="input-group">
                             <label class="label">Name</label>
                             <input autocomplete="off" name="Name" id="Name" class="input" type="text">
@@ -89,16 +100,18 @@
                             <label class="label">Email Address</label>
                             <input autocomplete="off" name="Email" id="Email" class="input" type="email">
                             <div></div></div>
-                    </div>
+                    </form>
                 </div>
             </div>
+
+
             <div id="sing" class="tab">
                 <div class="header">
-                    <button class="btn" onclick="toggleDisplay('sing')">Back</button>
+                    <button class="btn" onclick="toggleDisplay('sing')"><ion-icon name="chevron-back"></ion-icon></button>
                     <h1 id="event-name">Singing</h1>
                 </div>
                 <div class="sheet">
-                    <div id="input">
+                    <form id="input">
                         <div class="input-group">
                             <label class="label">Name</label>
                             <input autocomplete="off" name="Name" id="Name" class="input" type="text">
@@ -107,16 +120,18 @@
                             <label class="label">Email Address</label>
                             <input autocomplete="off" name="Email" id="Email" class="input" type="email">
                             <div></div></div>
-                    </div>
+                    </form>
                 </div>
             </div>
+
+
             <div id="cosplay" class="tab">
                 <div class="header">
-                    <button class="btn" onclick="toggleDisplay('cosplay')">Back</button>
+                    <button class="btn" onclick="toggleDisplay('cosplay')"><ion-icon name="chevron-back"></ion-icon></button>
                     <h1 id="event-name">Cosplay</h1>
                 </div>
                 <div class="sheet">
-                    <div id="input">
+                    <form id="input">
                         <div class="input-group">
                             <label class="label">Name</label>
                             <input autocomplete="off" name="Name" id="Name" class="input" type="text">
@@ -125,16 +140,18 @@
                             <label class="label">Email Address</label>
                             <input autocomplete="off" name="Email" id="Email" class="input" type="email">
                             <div></div></div>
-                    </div>
+                    </form>
                 </div>
             </div>
+
+
             <div id="dance" class="tab">
                 <div class="header">
-                    <button class="btn" onclick="toggleDisplay('dance')">Back</button>
+                    <button class="btn" onclick="toggleDisplay('dance')"><ion-icon name="chevron-back"></ion-icon></button>
                     <h1 id="event-name">Dancing</h1>
                 </div>
                 <div class="sheet">
-                    <div id="input">
+                    <form id="input">
                         <div class="input-group">
                             <label class="label">Name</label>
                             <input autocomplete="off" name="Name" id="Name" class="input" type="text">
@@ -143,16 +160,18 @@
                             <label class="label">Email Address</label>
                             <input autocomplete="off" name="Email" id="Email" class="input" type="email">
                             <div></div></div>
-                    </div>
+                    </form>
                 </div>
             </div>
+
+
             <div id="botb" class="tab">
                 <div class="header">
-                    <button class="btn" onclick="toggleDisplay('botb')">Back</button>
+                    <button class="btn" onclick="toggleDisplay('botb')"><ion-icon name="chevron-back"></ion-icon></button>
                     <h1 id="event-name">Battle of the Bands</h1>
                 </div>
                 <div class="sheet">
-                    <div id="input">
+                    <form id="input">
                         <div class="input-group">
                             <label class="label">Name</label>
                             <input autocomplete="off" name="Name" id="Name" class="input" type="text">
@@ -161,16 +180,18 @@
                             <label class="label">Email Address</label>
                             <input autocomplete="off" name="Email" id="Email" class="input" type="email">
                             <div></div></div>
-                    </div>
+                    </form>
                 </div>
             </div>
+
+
             <div id="mrms" class="tab">
                 <div class="header">
-                    <button class="btn" onclick="toggleDisplay('mrms')">Back</button>
+                    <button class="btn" onclick="toggleDisplay('mrms')"><ion-icon name="chevron-back"></ion-icon></button>
                     <h1 id="event-name">Mr. and Ms. SOC</h1>
                 </div>
                 <div class="sheet">
-                    <div id="input">
+                    <form id="input">
                         <div class="input-group">
                             <label class="label">Name</label>
                             <input autocomplete="off" name="Name" id="Name" class="input" type="text">
@@ -179,9 +200,15 @@
                             <label class="label">Email Address</label>
                             <input autocomplete="off" name="Email" id="Email" class="input" type="email">
                             <div></div></div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </main>
+
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
     </body>
 </html>
