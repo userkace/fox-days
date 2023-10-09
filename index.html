@@ -215,11 +215,17 @@
             <div class="sheet">
                 
                 <form id="input" action="https://docs.google.com/forms/d/e/1FAIpQLSdqL1AFVuwj40bCKiPqybPAGqooDWXLxhEJB2RLI0sLZXVNiw/formResponse">
-                    <div class="input-group">
+                        <div class="input-group">
                         <label class="label">Name</label>
                         <input autocomplete="off" id="Name" class="input" type="text" name="entry.660327431" required data-form-input>
+                        <div></div></div>
+
+                        <div class="input-group">
                         <label class="label">Email Address</label>
                         <input autocomplete="off" id="Email" class="input" type="email" name="entry.87362158" required data-form-input>
+                        <div></div></div>
+
+                        <div class="input-group">
                         <label class="label">Contestant</label>
                         <select id="Contestant" class="input dropdown" name="entry.1195037347" required data-form-input>
                             <option></option>
@@ -227,6 +233,22 @@
                             <option>Contestant 2</option>
                             <option>Contestant 3</option>
                         </select>
+                        <div></div></div>
+
+                        <div class="input-group">
+                        <label class="label">Checkbox</label>
+                        1
+                        <input class="input checkbox" type="radio" name="entry.87362158" required data-form-input>
+                        <input class="input checkbox" type="radio" name="entry.87362158" required data-form-input>
+                        <input class="input checkbox" type="radio" name="entry.87362158" required data-form-input>
+                        <input class="input checkbox" type="radio" name="entry.87362158" required data-form-input>
+                        <input class="input checkbox" type="radio" name="entry.87362158" required data-form-input>
+                        5
+                        <div></div></div>
+
+                        <div class="input-group">
+                        <label class="label">Slider</label>
+                        <input class="input range" type="range" min="1" max="5" value="1">
                         <div></div></div>
 
                     <button class="submit" type="submit" onclick="toggleDisplay('test')"><ion-icon name="arrow-redo"></ion-icon></button>
