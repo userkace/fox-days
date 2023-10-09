@@ -1,55 +1,58 @@
+@font-face {
+  font-family: "Zagora";
+  src: url(./assets/Zagora.ttf) format("truetype");
+}
+
+
 :root{
-    --background: linear-gradient(180deg, rgba(190,167,125,1) 0%, rgba(224,212,185,1) 50%, rgba(211,198,169,1) 100%);
-    --border: #772602;
-    --button: linear-gradient(180deg, rgba(173,99,1,1) 0%, rgba(255,255,68,1) 20%, rgba(255,255,219,1) 0%, rgba(242,219,42,1) 80%, rgba(115,50,0,1) 100%);
-    background: var(--background);
-    background-size: cover;
-    height: 100%;
+  --background: linear-gradient(180deg, rgba(190,167,125,1) 0%, rgba(224,212,185,1) 50%, rgba(211,198,169,1) 100%);
+  --border: #772602;
+  --button: linear-gradient(180deg, rgba(173,99,1,1) 0%, rgba(255,255,68,1) 20%, rgba(255,255,219,1) 0%, rgba(242,219,42,1) 80%, rgba(115,50,0,1) 100%);
+  background: var(--background);
+  background-size: cover;
+  height: 100%;
 }
 
 main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #head-logo{
-    display: flex;
-    width: 30em;
+  display: flex;
+  width: 30em;
 }
 
 /*Buttons*/
 #btns{
-    display: block;
+  display: block;
 }
-#btn {
+#btn,
+.btn {
+  font-size: .9rem;
+  font-family: "Zagora";
   display: flex;
   margin-bottom: 1em;
   outline: none;
   color: var(--border);
   padding: 0.5em;
+  border: 2px dashed var(--border);
+  border-radius: 15px;
+  background-color: var(--background);
+  box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+  transition: .1s ease-in-out, .4s color;
+}
+#btn{
   padding-left: 3em;
   padding-right: 3em;
-  border: 2px dashed var(--border);
-  border-radius: 15px;
-  background-color: var(--background);
-  box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
-  transition: .1s ease-in-out, .4s color;
 }
 .btn {
-  display: flex;
-  margin-bottom: 1em;
-  outline: none;
-  color: var(--border);
-  padding: 0.5em;
+  float: left;
+  margin-right: 1em;
   padding-left: 1em;
   padding-right: 1em;
-  border: 2px dashed var(--border);
-  border-radius: 15px;
-  background-color: var(--background);
-  box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
-  transition: .1s ease-in-out, .4s color;
 }
 #btn:hover,
   .btn:hover{
@@ -67,6 +70,7 @@ main{
     display: none;
 }
 .sheet{
+    width:30em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,40 +87,38 @@ main{
     transition: .1s ease-in-out, .4s color;
 }
 #input{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .input {
-    max-width: 30em;
-    height: 1.5em;
-    background-color: #05060f0a;
-    border-radius: .5rem;
-    padding: 0 0.5rem;
-    border: 2px solid transparent;
-    font-size: 0.9rem;
-    transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
-    margin-bottom: 1em;
-  }
+  max-width: 30em;
+  height: 1.5em;
+  background-color: #05060f0a;
+  border-radius: .5rem;
+  padding: 0 0.5rem;
+  border: 2px solid transparent;
+  font-size: 0.9rem;
+  transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+  margin-bottom: 1em;
+}
   
-  .label {
-    display: block;
-    margin-bottom: .3rem;
-    font-size: .9rem;
-    font-weight: bold;
-    color: #05060f99;
-    transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
-  }
+.label {
+  font-family: "Zagora";
+  display: block;
+  margin-bottom: .3rem;
+  font-size: .9rem;
+  color: #05060f99;
+  transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+}
   
-  .input:hover, .input:focus, .input-group:hover .input {
-    outline: none;
-    border-style: dashed;
-    border-color: var(--border);
-  }
-  .input:focus {
-    border-style: solid;
-  }
-  
-  
-  .input-group:hover .label, .input:focus {
-    color: #05060fc2;
-  }
+.input:hover, .input:focus, .input-group:hover .input {
+  outline: none;
+  border-style: dashed;
+  border-color: var(--border);
+}
+.input:focus {
+  border-style: solid;
+}
+.input-group:hover .label, .input:focus {
+  color: #05060fc2;
+}
