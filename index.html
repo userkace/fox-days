@@ -215,6 +215,8 @@
             <div class="sheet">
                 
                 <form id="input" action="https://docs.google.com/forms/d/e/1FAIpQLSdqL1AFVuwj40bCKiPqybPAGqooDWXLxhEJB2RLI0sLZXVNiw/formResponse">
+                        <label class="label label-head">Judge</label>
+                        
                         <div class="input-group">
                         <label class="label">Name</label>
                         <input autocomplete="off" id="Name" class="input" type="text" name="entry.660327431" required data-form-input>
@@ -225,10 +227,12 @@
                         <input autocomplete="off" id="Email" class="input" type="email" name="entry.87362158" required data-form-input>
                         <div></div></div>
 
+                        <label class="label label-head">Tabulation</label>
+
                         <div class="input-group">
                         <label class="label">Contestant</label>
                         <select id="Contestant" class="input dropdown" name="entry.1195037347" required data-form-input>
-                            <option></option>
+                            <option>—</option>
                             <option>Contestant 1</option>
                             <option>Contestant 2</option>
                             <option>Contestant 3</option>
@@ -236,19 +240,25 @@
                         <div></div></div>
 
                         <div class="input-group">
-                        <label class="label">Checkbox</label>
-                        1
-                        <input value="1" class="input checkbox" type="radio" name="entry.87362158" required data-form-input>
-                        <input value="2" class="input checkbox" type="radio" name="entry.87362158" required data-form-input>
-                        <input value="3" class="input checkbox" type="radio" name="entry.87362158" required data-form-input>
-                        <input value="4" class="input checkbox" type="radio" name="entry.87362158" required data-form-input>
-                        <input value="5" class="input checkbox" type="radio" name="entry.87362158" required data-form-input>
-                        5
+                        <label class="label"><span class="weight">(25%)</span> Composition</label>
+                        <a class="lower limit">1</a>
+                        <input value="1" class="input radio" type="radio" name="entry.1524006175" required data-form-input>
+                        <input value="2" class="input radio" type="radio" name="entry.1524006175" required data-form-input>
+                        <input value="3" class="input radio" type="radio" name="entry.1524006175" required data-form-input>
+                        <input value="4" class="input radio" type="radio" name="entry.1524006175" required data-form-input>
+                        <input value="5" class="input radio" type="radio" name="entry.1524006175" required data-form-input>
+                        <a class="upper limit">5</a>
                         <div></div></div>
 
                         <div class="input-group">
-                        <label class="label">Slider</label>
-                        <input class="input range" type="range" min="1" max="5" value="1">
+                        <label class="label"><span class="weight">(50%)</span> Creativity</label>
+                        <a class="lower limit">1</a>
+                        <input value="1" class="input radio" type="radio" name="entry.1971416326" required data-form-input>
+                        <input value="2" class="input radio" type="radio" name="entry.1971416326" required data-form-input>
+                        <input value="3" class="input radio" type="radio" name="entry.1971416326" required data-form-input>
+                        <input value="4" class="input radio" type="radio" name="entry.1971416326" required data-form-input>
+                        <input value="5" class="input radio" type="radio" name="entry.1971416326" required data-form-input>
+                        <a class="upper limit">5</a>
                         <div></div></div>
 
                     <button class="submit" type="submit" onclick="toggleDisplay('test')"><ion-icon name="arrow-redo"></ion-icon></button>

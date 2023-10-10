@@ -1,8 +1,11 @@
 /*Reusable*/
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
 @font-face { font-family: "Zagora"; src: url(./Zagora.ttf) format("truetype"); }
 @font-face { font-family: "Belgan"; src: url(./Belgan-Aesthetic.ttf) format("truetype"); }
 :root{
   --black: #05060f99;
+  --grey: #05060f0a;
+  --tan-a: #EADDCA;
   --tan: linear-gradient(180deg, rgba(190,167,125,1) 0%, rgba(224,212,185,1) 50%, rgba(211,198,169,1) 100%);
   --dark-brown: #772602;
 
@@ -55,7 +58,7 @@ body{
   border: 2px dashed var(--dark-brown);
   border-radius: 15px;
   background-color: var(--tan);
-  box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 4px var(--tan-a), 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
   transition: .1s ease-in-out, .4s color;
 }
 .submit{
@@ -84,7 +87,7 @@ body{
 .btn:active,
 .submit:active {
     transform: translateX(0.1em) translateY(0.1em);
-    box-shadow: 0 0 0 4px #EADDCA, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 4px var(--tan-a), 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -115,8 +118,13 @@ body{
     border: 2px dashed var(--dark-brown);
     border-radius: 15px;
     background-color: var(--tan);
-    box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 4px var(--tan-a), 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
     transition: .1s ease-in-out, .4s color;
+}
+option,
+input{
+  font-family: 'Gabarito', monospace;
+  color: var(--black);
 }
 #input{
   display: flex;
@@ -128,7 +136,7 @@ body{
   cursor: var(--text);
   max-width: 30em;
   height: 1.5em;
-  background-color: #05060f0a;
+  background-color: var(--grey);
   border-radius: .5rem;
   padding: 0 0.5rem;
   border: 2px solid transparent;
@@ -139,20 +147,36 @@ body{
 .dropdown{
   cursor: var(--pointer);
 }
-.checkbox,
-.slider{
+.radio{
+  accent-color: var(--dark-brown);
   cursor: var(--default);
+  height: auto;
 }
-  
+
 .label {
   cursor: var(--default);
-  font-family: "Zagora";
+  font-family: 'Zagora';
   display: block;
   margin-bottom: .3rem;
   font-size: .9rem;
-  color: #05060f99;
+  color: var(--black);
   transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
 }
+.label-head{
+  font-size: 1.2rem;
+  margin-bottom: .1rem;
+  font-family: 'Belgan';
+  font-weight: bold;
+  color: var(--dark-brown);
+}
+.weight{
+  color: var(--dark-brown);
+  font-family: 'Belgan';
+  font-weight: bold;
+  font-size: 0.9em;
+  transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
 .input-group{
   min-width: 12em;
 }
@@ -168,8 +192,17 @@ body{
 .input-group:hover .label, .input:focus {
   color: var(--dark-brown);
 }
+.input-group:hover .weight{
+  color: var(--black)
+}
 
-
-@media screen {
-  
+.limit{
+  font-family: 'Zagora';
+  font-size: 0.9em;
+}
+.lower{
+  margin-right: 0.5em;
+}
+.upper{
+  margin-left: 0.5em;
 }
