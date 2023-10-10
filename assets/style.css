@@ -13,7 +13,7 @@
 
   background: var(--tan);
   background-size: cover;
-  height: 100%;
+  height: 120%;
   cursor: var(--default);
 }
 
@@ -167,4 +167,9 @@ body{
 }
 .input-group:hover .label, .input:focus {
   color: var(--dark-brown);
+}
+
+
+@media screen {
+  
 }
