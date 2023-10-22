@@ -5,6 +5,7 @@
 :root{
   --black: #05060f99;
   --grey: #05060f0a;
+  --grey-o: #05060f55;
   --tan-a: #EADDCA;
   --tan: linear-gradient(180deg, rgba(190,167,125,1) 0%, rgba(224,212,185,1) 50%, rgba(211,198,169,1) 100%);
   --dark-brown: #772602;
@@ -14,9 +15,10 @@
   --text: url('./cursor/text.png'), text;
   --disabled: url('./cursor/disabled.png'), disabled;
 
+
   background: var(--tan);
   background-size: cover;
-  height: 120%;
+  min-height: 100%;
   cursor: var(--default);
 }
 
@@ -105,6 +107,7 @@ body{
   padding: 0;
   float: right;
   color: var(--black);
+  font-size: 1.8em;
 }
 .sheet{
     width: 20em;
@@ -144,6 +147,15 @@ input{
   transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
   margin-bottom: 1em;
 }
+.input-info{
+  max-width: 14em;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+  color: var(--grey-o);
+}
+.last-info{
+  margin-bottom: 0;
+}
 .dropdown{
   cursor: var(--pointer);
 }
@@ -151,6 +163,8 @@ input{
   accent-color: var(--dark-brown);
   cursor: var(--default);
   height: auto;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 .label {

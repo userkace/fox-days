@@ -16,136 +16,469 @@
 
             <img id="head-logo" src="./assets/socdays.png">
 
-
+            <!-- MENU -->
             <div id="btns">
                 <button id="btn" onclick="toggleDisplay('poster', 'Poster Making')">Poster Making</button>
                 <button id="btn" onclick="toggleDisplay('mv', 'Music Video')">Music Video</button>
                 <button id="btn" onclick="toggleDisplay('ad', 'Video Ad')">Video Ad</button>
                 <button id="btn" onclick="toggleDisplay('sing', 'Singing')">Singing</button>
                 <button id="btn" onclick="toggleDisplay('cosplay', 'Cosplay')">Cosplay</button>
-                <button id="btn" onclick="toggleDisplay('dance', 'Dancing')">Dancing</button>
+                <!-- <button id="btn" onclick="toggleDisplay('dance', 'Dancing')">Dancing</button> -->
                 <button id="btn" onclick="toggleDisplay('botb', 'Battle of The Bands')">Battle of The Bands</button>
                 <button id="btn" onclick="toggleDisplay('mrms', 'Mr. and Ms. SOC')">Mr. and Ms. SOC</button>
                 <button id="btn" onclick="toggleDisplay('test', 'Test')">Test</button>
             </div>
 
-            
+            <!-- POSTER MAKING -->
             <div id="poster" class="tab">
                 <div class="header">
                     <button class="btn" onclick="toggleDisplay('poster')"><ion-icon name="caret-back"></ion-icon></button>
                     <h1 id="event-name">Poster Making</h1>
                 </div>   
                 <div class="sheet">
-                    <form id="input">
+                    <form id="input" action="https://docs.google.com/forms/d/e/1FAIpQLSco8XGAo2AGgwZnpURrc_JesMSMLmSWQra4S1fytsL_NzpmbQ/formResponse" data-form>
+                        <label class="label label-head">Judge</label>
+                        
                         <div class="input-group">
-                            <label class="label">Name</label>
-                            <input autocomplete="off" name="Name" id="Name" class="input" type="text">
-                            <div></div></div>
+                        <label class="label">Name</label>
+                        <input autocomplete="off" id="Name" class="input" type="text" name="entry.939917276" required data-form-input>
+                        </div>
+
                         <div class="input-group">
-                            <label class="label">Email Address</label>
-                            <input autocomplete="off" name="Email" id="Email" class="input" type="email">
-                            <div></div></div>
+                        <label class="label">Email Address</label>
+                        <input autocomplete="off" id="Email" class="input" type="email" name="entry.641009015" required data-form-input>
+                        </div>
+
+                        <label class="label label-head">Tabulation</label>
+
                         <div class="input-group">
-                            <label class="label">Contestant</label>
-                            <select name="Contestant" id="Contestant" class="input dropdown">
-                                <option></option>
-                                <option>Contestant 1</option>
-                                <option>Contestant 2</option>
-                                <option>Contestant 3</option>
-                            </select>
-                            <div></div></div>
-                    </form>
+                        <label class="label">Contestant</label>
+                        <select id="Contestant" class="input dropdown" name="entry.1817903118" required data-form-input>
+                            <option></option>
+                            <option>Contestant 1</option>
+                            <option>Contestant 2</option>
+                            <option>Contestant 3</option>
+                        </select>
+                        </div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(40%)</span> Composition</label>
+                        <a class="lower limit">1</a>
+                        <input value="4" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <input value="8" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <input value="12" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <input value="16" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <input value="20" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <a class="upper limit">5</a>
+                        <div class="input-info">How the participants expressed their digital skills in an organized and well-delivered manner and how they adhered to the theme.</div></div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(25%)</span> Technicality & Aesthetic</label>
+                        <a class="lower limit">1</a>
+                        <input value="2.5" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <input value="5" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <input value="7.5" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <input value="10" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <input value="12.5" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <a class="upper limit">5</a>
+                        <div class="input-info">How the participants produce eye-pleasing outputs without compromising technicalities.</div></div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(25%)</span> Originality & Creativity</label>
+                        <a class="lower limit">1</a>
+                        <input value="2.5" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <input value="5" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <input value="7.5" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <input value="10" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <input value="12.5" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <a class="upper limit">5</a>
+                        <div class="input-info">How the participants showcased their creativity, inventiveness, and distinctiveness among others through their digital art.</div></div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(10%)</span> Overall Impact</label>
+                        <a class="lower limit">1</a>
+                        <input value="1" class="input radio" type="radio" name="entry.2053162401" required data-form-input>
+                        <input value="2" class="input radio" type="radio" name="entry.2053162401" required data-form-input>
+                        <input value="3" class="input radio" type="radio" name="entry.2053162401" required data-form-input>
+                        <input value="4" class="input radio" type="radio" name="entry.2053162401" required data-form-input>
+                        <input value="5" class="input radio" type="radio" name="entry.2053162401" required data-form-input>
+                        <a class="upper limit">5</a>
+                        <div class="input-info last-info">How the ouput resonated with the judges.</div></div>
+
+                    <button id="submit" class="submit" type="submit" value="Submit" onclick="toggleDisplay('poster')" data-form-btn>
+                        <ion-icon name="paper-plane"></ion-icon>
+                    </button>
+                </form>
                 </div>
             </div>
 
-
+            <!-- MUSIC VIDEO -->
             <div id="mv" class="tab">
                 <div class="header">
                     <button class="btn" onclick="toggleDisplay('mv')"><ion-icon name="caret-back"></ion-icon></button>
                     <h1 id="event-name">Music Video</h1>
                 </div>   
                 <div class="sheet">
-                    <form id="input">
+                    <form id="input" action="https://docs.google.com/forms/d/e/1FAIpQLSeFBtzLJ4olZToPszu3ihYYFAVCg5LbC8NkJonYU78BDD7xIg/formResponse" data-form>
+                        <label class="label label-head">Judge</label>
+                        
                         <div class="input-group">
-                            <label class="label">Name</label>
-                            <input autocomplete="off" name="Name" id="Name" class="input" type="text">
-                            <div></div></div>
+                        <label class="label">Name</label>
+                        <input autocomplete="off" id="Name" class="input" type="text" name="entry.939917276" required data-form-input>
+                        </div>
+
                         <div class="input-group">
-                            <label class="label">Email Address</label>
-                            <input autocomplete="off" name="Email" id="Email" class="input" type="email">
-                            <div></div></div><div class="input-group">
-                                <label class="label">Contestant</label>
-                                <select name="Contestant" id="Contestant" class="input dropdown">
-                                    <option>Contestant 1</option>
-                                    <option>Contestant 1</option>
-                                    <option>Contestant 1</option>
-                                </select>
-                                <div></div></div>
-                    </form>
+                        <label class="label">Email Address</label>
+                        <input autocomplete="off" id="Email" class="input" type="email" name="entry.641009015" required data-form-input>
+                        </div>
+
+                        <label class="label label-head">Tabulation</label>
+
+                        <div class="input-group">
+                        <label class="label">Contestant</label>
+                        <select id="Contestant" class="input dropdown" name="entry.1817903118" required data-form-input>
+                            <option></option>
+                            <option>Contestant 1</option>
+                            <option>Contestant 2</option>
+                            <option>Contestant 3</option>
+                        </select>
+                        </div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(25%)</span> Cinematography</label>
+                        <a class="lower limit">1</a>
+                        <input value="2.5" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <input value="5" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <input value="7.5" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <input value="10" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <input value="12.5" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <a class="upper limit">5</a>
+                        </div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(20%)</span> Visual Aesthetic</label>
+                        <a class="lower limit">1</a>
+                        <input value="2" class="input radio" type="radio" name="entry.1468061769" required data-form-input>
+                        <input value="4" class="input radio" type="radio" name="entry.1468061769" required data-form-input>
+                        <input value="6" class="input radio" type="radio" name="entry.1468061769" required data-form-input>
+                        <input value="8" class="input radio" type="radio" name="entry.1468061769" required data-form-input>
+                        <input value="10" class="input radio" type="radio" name="entry.1468061769" required data-form-input>
+                        <a class="upper limit">5</a>
+                        </div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(20%)</span> Audio Quality</label>
+                        <a class="lower limit">1</a>
+                        <input value="2" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <input value="4" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <input value="6" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <input value="8" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <input value="10" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <a class="upper limit">5</a>
+                        </div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(20%)</span> Creativity & Concept</label>
+                        <a class="lower limit">1</a>
+                        <input value="2" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <input value="4" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <input value="6" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <input value="8" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <input value="10" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <a class="upper limit">5</a>
+                        </div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(15%)</span> Editing & Post-Prod.</label>
+                        <a class="lower limit">1</a>
+                        <input value="1.5" class="input radio" type="radio" name="entry.2053162401" required data-form-input>
+                        <input value="3" class="input radio" type="radio" name="entry.2053162401" required data-form-input>
+                        <input value="4.5" class="input radio" type="radio" name="entry.2053162401" required data-form-input>
+                        <input value="6" class="input radio" type="radio" name="entry.2053162401" required data-form-input>
+                        <input value="7.5" class="input radio" type="radio" name="entry.2053162401" required data-form-input>
+                        <a class="upper limit">5</a>
+                        </div>
+
+                    <button id="submit" class="submit" type="submit" value="Submit" onclick="toggleDisplay('mv')" data-form-btn>
+                        <ion-icon name="paper-plane"></ion-icon>
+                    </button>
+                </form>
                 </div>
             </div>
 
-            
+            <!-- VIDEO ADVERTISEMENT -->            
             <div id="ad" class="tab">
                 <div class="header">
                     <button class="btn" onclick="toggleDisplay('ad')"><ion-icon name="caret-back"></ion-icon></button>
-                    <h1 id="event-name">Video Advertisement</h1>
+                    <h1 id="event-name">Video Advert</h1>
                 </div>
                 <div class="sheet">
-                    <form id="input">
+                    <form id="input" action="https://docs.google.com/forms/d/e/1FAIpQLSfVSCe4zUuhNS8U2JlXBeTTWOpumBibLS9jN1iZPXZPInFVNg/formResponse" data-form>
+                        <label class="label label-head">Judge</label>
+                        
                         <div class="input-group">
-                            <label class="label">Name</label>
-                            <input autocomplete="off" name="Name" id="Name" class="input" type="text">
-                            <div></div></div>
+                        <label class="label">Name</label>
+                        <input autocomplete="off" id="Name" class="input" type="text" name="entry.939917276" required data-form-input>
+                        </div>
+
                         <div class="input-group">
-                            <label class="label">Email Address</label>
-                            <input autocomplete="off" name="Email" id="Email" class="input" type="email">
-                            <div></div></div>
+                        <label class="label">Email Address</label>
+                        <input autocomplete="off" id="Email" class="input" type="email" name="entry.641009015" required data-form-input>
+                        </div>
+
+                        <label class="label label-head">Tabulation</label>
+
+                        <div class="input-group">
+                        <label class="label">Contestant</label>
+                        <select id="Contestant" class="input dropdown" name="entry.1817903118" required data-form-input>
+                            <option></option>
+                            <option>Contestant 1</option>
+                            <option>Contestant 2</option>
+                            <option>Contestant 3</option>
+                        </select>
+                        </div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(30%)</span> Editing Technique</label>
+                        <a class="lower limit">1</a>
+                        <input value="3" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <input value="6" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <input value="9" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <input value="12" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <input value="15" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <a class="upper limit">5</a>
+                        </div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(25%)</span> Originality & Creativity</label>
+                        <a class="lower limit">1</a>
+                        <input value="2.5" class="input radio" type="radio" name="entry.1468061769" required data-form-input>
+                        <input value="5" class="input radio" type="radio" name="entry.1468061769" required data-form-input>
+                        <input value="7.5" class="input radio" type="radio" name="entry.1468061769" required data-form-input>
+                        <input value="10" class="input radio" type="radio" name="entry.1468061769" required data-form-input>
+                        <input value="12.5" class="input radio" type="radio" name="entry.1468061769" required data-form-input>
+                        <a class="upper limit">5</a>
+                       </div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(15%)</span> Visual & Audio Appeal</label>
+                        <a class="lower limit">1</a>
+                        <input value="1.5" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <input value="3" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <input value="4.5" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <input value="6" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <input value="7.5" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <a class="upper limit">5</a>
+                        </div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(10%)</span> Impact & Engagement</label>
+                        <a class="lower limit">1</a>
+                        <input value="1" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <input value="2" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <input value="3" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <input value="4" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <input value="5" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <a class="upper limit">5</a>
+                        </div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(10%)</span> Brand Integration</label>
+                        <a class="lower limit">1</a>
+                        <input value="1" class="input radio" type="radio" name="entry.2053162401" required data-form-input>
+                        <input value="2" class="input radio" type="radio" name="entry.2053162401" required data-form-input>
+                        <input value="3" class="input radio" type="radio" name="entry.2053162401" required data-form-input>
+                        <input value="4" class="input radio" type="radio" name="entry.2053162401" required data-form-input>
+                        <input value="5" class="input radio" type="radio" name="entry.2053162401" required data-form-input>
+                        <a class="upper limit">5</a>
+                        </div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(10%)</span> Compliance</label>
+                        <a class="lower limit">1</a>
+                        <input value="1" class="input radio" type="radio" name="entry.1140705584" required data-form-input>
+                        <input value="2" class="input radio" type="radio" name="entry.1140705584" required data-form-input>
+                        <input value="3" class="input radio" type="radio" name="entry.1140705584" required data-form-input>
+                        <input value="4" class="input radio" type="radio" name="entry.1140705584" required data-form-input>
+                        <input value="5" class="input radio" type="radio" name="entry.1140705584" required data-form-input>
+                        <a class="upper limit">5</a>
+                        </div>
+
+
+                        <button id="submit" class="submit" type="submit" value="Submit" onclick="toggleDisplay('ad')" data-form-btn>
+                            <ion-icon name="paper-plane"></ion-icon>
+                        </button>
                     </form>
                 </div>
             </div>
 
-
+            <!-- SINGING -->
             <div id="sing" class="tab">
                 <div class="header">
                     <button class="btn" onclick="toggleDisplay('sing')"><ion-icon name="caret-back"></ion-icon></button>
                     <h1 id="event-name">Singing</h1>
                 </div>
                 <div class="sheet">
-                    <form id="input">
+                    <form id="input" action="https://docs.google.com/forms/d/e/1FAIpQLScWZRE1LY0Du7hA1pPz9MYVnY3Eu4Ipv2Gt2JPC_GlGVazA4w/formResponse" data-form>
+                        <label class="label label-head">Judge</label>
+                        
                         <div class="input-group">
-                            <label class="label">Name</label>
-                            <input autocomplete="off" name="Name" id="Name" class="input" type="text">
-                            <div></div></div>
+                        <label class="label">Name</label>
+                        <input autocomplete="off" id="Name" class="input" type="text" name="entry.939917276" required data-form-input>
+                        </div>
+
                         <div class="input-group">
-                            <label class="label">Email Address</label>
-                            <input autocomplete="off" name="Email" id="Email" class="input" type="email">
-                            <div></div></div>
+                        <label class="label">Email Address</label>
+                        <input autocomplete="off" id="Email" class="input" type="email" name="entry.641009015" required data-form-input>
+                        </div>
+
+                        <label class="label label-head">Tabulation</label>
+
+                        <div class="input-group">
+                        <label class="label">Contestant</label>
+                        <select id="Contestant" class="input dropdown" name="entry.1817903118" required data-form-input>
+                            <option></option>
+                            <option>Contestant 1</option>
+                            <option>Contestant 2</option>
+                            <option>Contestant 3</option>
+                        </select>
+                        </div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(30%)</span> Vocal Technique</label>
+                        <a class="lower limit">1</a>
+                        <input value="3" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <input value="6" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <input value="9" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <input value="12" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <input value="15" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <a class="upper limit">5</a>
+                        <div class="input-info">Tone, quality, breath support, intonation, diction, and articulation.</div></div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(30%)</span> Rhythm & Tempo</label>
+                        <a class="lower limit">1</a>
+                        <input value="3" class="input radio" type="radio" name="entry.1468061769" required data-form-input>
+                        <input value="6" class="input radio" type="radio" name="entry.1468061769" required data-form-input>
+                        <input value="9" class="input radio" type="radio" name="entry.1468061769" required data-form-input>
+                        <input value="12" class="input radio" type="radio" name="entry.1468061769" required data-form-input>
+                        <input value="15" class="input radio" type="radio" name="entry.1468061769" required data-form-input>
+                        <a class="upper limit">5</a>
+                        <div class="input-info">Voice in relation to music.</div></div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(20%)</span> Expression</label>
+                        <a class="lower limit">1</a>
+                        <input value="2" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <input value="4" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <input value="6" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <input value="8" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <input value="10" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <a class="upper limit">5</a>
+                        <div class="input-info">How well the performer was able to convey the song's message and emotion.</div></div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(10%)</span> Showmanship</label>
+                        <a class="lower limit">1</a>
+                        <input value="1" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <input value="2" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <input value="3" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <input value="4" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <input value="5" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <a class="upper limit">5</a>
+                        <div class="input-info">Entertainment value, music selection, effective usage of stage and performance area, outfit, and style.</div></div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(10%)</span> Theme Relevance</label>
+                        <a class="lower limit">1</a>
+                        <input value="1" class="input radio" type="radio" name="entry.2053162401" required data-form-input>
+                        <input value="2" class="input radio" type="radio" name="entry.2053162401" required data-form-input>
+                        <input value="3" class="input radio" type="radio" name="entry.2053162401" required data-form-input>
+                        <input value="4" class="input radio" type="radio" name="entry.2053162401" required data-form-input>
+                        <input value="5" class="input radio" type="radio" name="entry.2053162401" required data-form-input>
+                        <a class="upper limit">5</a>
+                        <div class="input-info last-info">How effectively the performance as a whole conveyed the theme's message and the connection between the introduction and theme.</div></div>
+
+                        <button id="submit" class="submit" type="submit" value="Submit" onclick="toggleDisplay('sing')" data-form-btn>
+                            <ion-icon name="paper-plane"></ion-icon>
+                        </button>
                     </form>
                 </div>
             </div>
 
-
+            <!-- COSPLAY -->
             <div id="cosplay" class="tab">
                 <div class="header">
                     <button class="btn" onclick="toggleDisplay('cosplay')"><ion-icon name="caret-back"></ion-icon></button>
                     <h1 id="event-name">Cosplay</h1>
                 </div>
                 <div class="sheet">
-                    <form id="input">
+                    <form id="input" action="https://docs.google.com/forms/d/e/1FAIpQLSewYjvG8EMK1p9zTfBe97zHD6v-O90aeQNl0wsR1azPbPEt5g/formResponse" data-form>
+                        <label class="label label-head">Judge</label>
+                        
                         <div class="input-group">
-                            <label class="label">Name</label>
-                            <input autocomplete="off" name="Name" id="Name" class="input" type="text">
-                            <div></div></div>
+                        <label class="label">Name</label>
+                        <input autocomplete="off" id="Name" class="input" type="text" name="entry.939917276" required data-form-input>
+                        </div>
+
                         <div class="input-group">
-                            <label class="label">Email Address</label>
-                            <input autocomplete="off" name="Email" id="Email" class="input" type="email">
-                            <div></div></div>
+                        <label class="label">Email Address</label>
+                        <input autocomplete="off" id="Email" class="input" type="email" name="entry.641009015" required data-form-input>
+                        </div>
+
+                        <label class="label label-head">Tabulation</label>
+
+                        <div class="input-group">
+                        <label class="label">Contestant</label>
+                        <select id="Contestant" class="input dropdown" name="entry.1817903118" required data-form-input>
+                            <option></option>
+                            <option>Contestant 1</option>
+                            <option>Contestant 2</option>
+                            <option>Contestant 3</option>
+                        </select>
+                        </div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(35%)</span> Accuracy</label>
+                        <a class="lower limit">1</a>
+                        <input value="3.5" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <input value="7" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <input value="10.5" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <input value="14" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <input value="17.5" class="input radio" type="radio" name="entry.838743610" required data-form-input>
+                        <a class="upper limit">5</a>
+                        <div class="input-info">Overall appearance of the cosplay is accurate to the reference material given. These include makeup, hair, costume, props, and accessories.</div></div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(35%)</span> Portrayal</label>
+                        <a class="lower limit">1</a>
+                        <input value="3.5" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <input value="7" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <input value="10.5" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <input value="14" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <input value="17.5" class="input radio" type="radio" name="entry.315589498" required data-form-input>
+                        <a class="upper limit">5</a>
+                        <div class="input-info">Cosplayer was able to portray the character through acting and stage presence.</div></div>
+
+                        <div class="input-group">
+                        <label class="label"><span class="weight">(30%)</span> Craftsmanship</label>
+                        <a class="lower limit">1</a>
+                        <input value="3" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <input value="6" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <input value="9" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <input value="12" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <input value="15" class="input radio" type="radio" name="entry.236068714" required data-form-input>
+                        <a class="upper limit">5</a>
+                        <div class="input-info last-info">Creativity with the materials utilized that are formed into the character's props, costume and accessories.</div></div>
+
+                        <button id="submit" class="submit" type="submit" value="Submit" onclick="toggleDisplay('cosplay')" data-form-btn>
+                            <ion-icon name="paper-plane"></ion-icon>
+                        </button>
                     </form>
                 </div>
             </div>
 
-
+            <!-- DANCING
             <div id="dance" class="tab">
                 <div class="header">
                     <button class="btn" onclick="toggleDisplay('dance')"><ion-icon name="caret-back"></ion-icon></button>
@@ -164,8 +497,9 @@
                     </form>
                 </div>
             </div>
+            -->
 
-
+            <!-- BATTLE OF THE BANDS -->
             <div id="botb" class="tab">
                 <div class="header">
                     <button class="btn" onclick="toggleDisplay('botb')"><ion-icon name="caret-back"></ion-icon></button>
@@ -185,28 +519,19 @@
                 </div>
             </div>
 
-
+            <!-- MR. AND MS. SOC -->
             <div id="mrms" class="tab">
                 <div class="header">
                     <button class="btn" onclick="toggleDisplay('mrms')"><ion-icon name="caret-back"></ion-icon></button>
                     <h1 id="event-name">Mr. and Ms. SOC</h1>
                 </div>
                 <div class="sheet">
-                    <form id="input">
-                        <div class="input-group">
-                            <label class="label">Name</label>
-                            <input autocomplete="off" name="Name" id="Name" class="input" type="text">
-                            <div></div></div>
-                        <div class="input-group">
-                            <label class="label">Email Address</label>
-                            <input autocomplete="off" name="Email" id="Email" class="input" type="email">
-                            <div></div></div>
-                    </form>
+                    <!--HERE-->
                 </div>
             </div>
 
 
-            
+        <!-- TEST -->    
         <div id="test" class="tab">
             <div class="header">
                 <button class="btn" onclick="toggleDisplay('test')"><ion-icon name="caret-back"></ion-icon></button>
@@ -214,18 +539,18 @@
             </div>   
             <div class="sheet">
                 
-                <form id="input" action="https://docs.google.com/forms/d/e/1FAIpQLSdqL1AFVuwj40bCKiPqybPAGqooDWXLxhEJB2RLI0sLZXVNiw/formResponse">
+                <form id="input" action="https://docs.google.com/forms/d/e/1FAIpQLSdqL1AFVuwj40bCKiPqybPAGqooDWXLxhEJB2RLI0sLZXVNiw/formResponse" data-form>
                         <label class="label label-head">Judge</label>
                         
                         <div class="input-group">
                         <label class="label">Name</label>
                         <input autocomplete="off" id="Name" class="input" type="text" name="entry.660327431" required data-form-input>
-                        <div></div></div>
+                        </div>
 
                         <div class="input-group">
                         <label class="label">Email Address</label>
                         <input autocomplete="off" id="Email" class="input" type="email" name="entry.87362158" required data-form-input>
-                        <div></div></div>
+                        </div>
 
                         <label class="label label-head">Tabulation</label>
 
@@ -237,33 +562,33 @@
                             <option>Contestant 2</option>
                             <option>Contestant 3</option>
                         </select>
-                        <div></div></div>
+                        </div>
 
                         <div class="input-group">
                         <label class="label"><span class="weight">(25%)</span> Composition</label>
                         <a class="lower limit">1</a>
-                        <input value="1" class="input radio" type="radio" name="entry.1524006175" required data-form-input>
-                        <input value="2" class="input radio" type="radio" name="entry.1524006175" required data-form-input>
-                        <input value="3" class="input radio" type="radio" name="entry.1524006175" required data-form-input>
-                        <input value="4" class="input radio" type="radio" name="entry.1524006175" required data-form-input>
                         <input value="5" class="input radio" type="radio" name="entry.1524006175" required data-form-input>
+                        <input value="10" class="input radio" type="radio" name="entry.1524006175" required data-form-input>
+                        <input value="15" class="input radio" type="radio" name="entry.1524006175" required data-form-input>
+                        <input value="20" class="input radio" type="radio" name="entry.1524006175" required data-form-input>
+                        <input value="25" class="input radio" type="radio" name="entry.1524006175" required data-form-input>
                         <a class="upper limit">5</a>
-                        <div></div></div>
+                        <div class="input-info">Lorem Ipsum</div></div>
 
                         <div class="input-group">
                         <label class="label"><span class="weight">(50%)</span> Creativity</label>
                         <a class="lower limit">1</a>
-                        <input value="1" class="input radio" type="radio" name="entry.1971416326" required data-form-input>
-                        <input value="2" class="input radio" type="radio" name="entry.1971416326" required data-form-input>
-                        <input value="3" class="input radio" type="radio" name="entry.1971416326" required data-form-input>
-                        <input value="4" class="input radio" type="radio" name="entry.1971416326" required data-form-input>
                         <input value="5" class="input radio" type="radio" name="entry.1971416326" required data-form-input>
+                        <input value="10" class="input radio" type="radio" name="entry.1971416326" required data-form-input>
+                        <input value="15" class="input radio" type="radio" name="entry.1971416326" required data-form-input>
+                        <input value="20" class="input radio" type="radio" name="entry.1971416326" required data-form-input>
+                        <input value="25" class="input radio" type="radio" name="entry.1971416326" required data-form-input>
                         <a class="upper limit">5</a>
-                        <div></div></div>
+                        <div class="input-info">Lorem Ipsum</div></div>
 
-                    <button class="submit" type="submit" onclick="toggleDisplay('test')"><ion-icon name="arrow-redo"></ion-icon></button>
-
-
+                    <button id="submit" class="submit" type="submit" onclick="toggleDisplay('test')">
+                        <ion-icon name="paper-plane"></ion-icon>
+                    </button>
                 </form>
             </div>
         </div>
