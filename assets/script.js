@@ -16,3 +16,20 @@ function toggleDisplay(className, eventName) {
       }
     }
   }
+
+  function togglePortion(menu, event, eventName) {
+    var menu = document.querySelectorAll("#" + menu);
+    var event = document.querySelectorAll("#" + event);
+
+    for (var i = 0; i < menu.length; i++) {
+      if (menu[i].style.display === "block") { //main
+        menu[i].style.display = "none";
+        event[i].style.display = "block";
+        document.title = "Mr. and Ms. SOC — SOC Days 2023";
+      } else { //menu
+        menu[i].style.display = "block";
+        event[i].style.display = "none";
+        document.title = eventName + " — SOC Days 2023";
+      }
+    }
+  }
