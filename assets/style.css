@@ -193,6 +193,7 @@ input{
 
 .input-group{
   min-width: 12em;
+  max-width: 12em;
 }
   
 .input:hover, .input:focus{
